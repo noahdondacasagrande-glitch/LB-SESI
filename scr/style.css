@@ -186,9 +186,8 @@ footer a img:hover{
     padding-top: 10vh;
     position: relative;
     z-index: 2;
-
-
 }
+
 .card{
     width: 300px;
     height: auto;
@@ -203,6 +202,14 @@ footer a img:hover{
 .card.visible{
     opacity: 1;
     transform: translateY(0);
+}
+
+#s3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 @media (width <=1000px){
     .navwords{
