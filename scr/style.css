@@ -34,8 +34,21 @@ nav{
     z-index: 999;
     animation: decima 1s ease-in-out;
     transition: all 1s ease-in-out;
+#s3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vid{
+    width: 1000px;
+    height: 620px;
+}
+
 
 }
+
+
+
 nav.cs{
     background-color: var(--strange);
 }
@@ -93,6 +106,8 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 
 
@@ -159,6 +174,36 @@ footer a img:hover{
     transform: translateY(-5px) scale(1.1) rotate(360deg);
     border-radius: 999px;
 }
+#s2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    min-height: 70vh;
+    color: var(--text);
+    margin-top: -10vh; 
+    padding-top: 10vh;
+    position: relative;
+    z-index: 2;
+
+
+}
+.card{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(200px);
+    transition:  opacity 0.6s ease, transform 0.6s ease;
+}
+.card.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
 @media (width <=1000px){
     .navwords{
         display: none;
@@ -173,12 +218,3 @@ footer a img:hover{
 }
 }
 
-#s3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.vid{
-    width: 1000px;
-    height: 620px;
-}
